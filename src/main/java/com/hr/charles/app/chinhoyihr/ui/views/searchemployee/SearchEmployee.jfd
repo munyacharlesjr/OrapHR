@@ -1,0 +1,92 @@
+JFDML JFormDesigner: "7.0.0.3.238" Java: "11.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l:::p {comp jLabel1:::p::p, comp jScrollPane1::::1031:x, comp searchTextField::l:::x}, space :::x}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp jLabel1:::p::p, space :p:78:p, comp searchTextField:::p:48:p, space :p:41:p, comp jScrollPane1:::p:416:p, space ::51:x}}"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 255, 255, 255, 255 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel1"
+				"font": new java.awt.Font( "Tahoma", 1, 20 )
+				"foreground": new java.awt.Color( 0, 102, 204, 255 )
+				"text": "Search Employee"
+				"toolTipText": ""
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "searchTextField"
+				"font": new java.awt.Font( "Times New Roman", 1, 24 )
+				"horizontalAlignment": 0
+				"text": "Search"
+				addEvent( new FormEvent( "java.awt.event.FocusListener", "focusGained", "searchTextFieldFocusGained", true ) )
+				addEvent( new FormEvent( "java.awt.event.FocusListener", "focusLost", "searchTextFieldFocusLost", true ) )
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyReleased", "searchTextFieldKeyReleased", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "jScrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "updateEmployeeTable"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+						add( "ID" )
+						add( "Full Name" )
+						add( "Phone" )
+						add( "Address" )
+						add( "Cnic" )
+						add( "Emergency Name" )
+						add( "Emergency Phone" )
+						add( "Date of Birth" )
+						add( "Email" )
+						add( "Position" )
+						add( "Date of Hiring" )
+						add( "Salary" )
+					}, new java.util.Vector {
+						add( class java.lang.Integer )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.Double )
+					}, new java.util.Vector {
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+					"cursor": new java.awt.Cursor( 12 )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

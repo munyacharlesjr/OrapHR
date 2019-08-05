@@ -1,0 +1,119 @@
+JFDML JFormDesigner: "7.0.0.3.238" Java: "11.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:41:p, par l {par t:::p {seq t {par l {comp jLabel2::l:p::p, comp jLabel3::l:p::p, comp jLabel7::l:p::p, comp jLabel12::l:p::p}, space :p:67:p, par l {par l:l::p {comp questincombo::l:::x, comp answertf::t:p:254:p}, par l:l::p {comp username:::::x, comp idTextField:::p:254:p}}}, seq t {par l {comp jLabel8::l:p::p, comp jLabel9::l:p::p, comp jLabel4::l:p::p}, space :::x, par l:::p {comp passwordtf::l:p:254:p, comp fullnametf::t:p:254:p, comp statusComboBox::l:p:254:p, comp Save::l:p:114:p}}}, comp jLabel1:::p:308:p}, space ::200:x}}"
+			"$verticalGroup": "par l {seq {space :p:41:p, comp jLabel1:::p::p, space :p:87:p, par b {comp jLabel2::b:p::p, comp idTextField::b:p::p}, space :p:45:p, par b {comp username::b:p::p, comp jLabel3::b:p::p}, space :p:45:p, par l {comp questincombo::l:p::p, comp jLabel7::l:p::p}, space :p:45:p, par l {comp jLabel12::l:p::p, comp answertf::l:p::p}, space :p:45:p, par b {comp jLabel8::b:p::p, comp fullnametf::b:p::p}, space :p:45:p, par b {comp passwordtf::b:p::p, comp jLabel9::b:p::p}, space :p:50:p, par b {comp jLabel4::b:p::p, comp statusComboBox::b:p::p}, space s:::p, comp Save:::p:48:p, space ::22:x}}"
+		} ) {
+			name: "this"
+			"preferredSize": new java.awt.Dimension( 689, 675 )
+			"requestFocusEnabled": false
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "idTextField"
+				"editable": false
+				"font": new java.awt.Font( "Tahoma", 0, 14 )
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel2"
+				"font": new java.awt.Font( "Tahoma", 1, 14 )
+				"text": "ID: "
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel3"
+				"font": new java.awt.Font( "Tahoma", 1, 14 )
+				"text": "User Name:"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "username"
+				"font": new java.awt.Font( "Tahoma", 0, 14 )
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel4"
+				"font": new java.awt.Font( "Tahoma", 1, 14 )
+				"text": "Status:"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel7"
+				"font": new java.awt.Font( "Tahoma", 1, 14 )
+				"text": "Security Question:"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "questincombo"
+				"font": new java.awt.Font( "Tahoma", 0, 13 )
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "What is your dream?"
+					addElement( "What is your dream?" )
+					addElement( "Whtat's your PET name?" )
+					addElement( "What's your school teacher name?" )
+				}
+				"cursor": &Cursor0 new java.awt.Cursor( 12 )
+				auxiliary() {
+					"JavaCodeGenerator.typeParameters": "String"
+				}
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "answertf"
+				"font": new java.awt.Font( "Tahoma", 0, 14 )
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "passwordtf"
+				"font": new java.awt.Font( "Tahoma", 0, 14 )
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "fullnametf"
+				"font": new java.awt.Font( "Tahoma", 0, 14 )
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel8"
+				"font": new java.awt.Font( "Tahoma", 1, 14 )
+				"text": "Full Name:"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel9"
+				"font": new java.awt.Font( "Tahoma", 1, 14 )
+				"text": "Password:"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel12"
+				"font": new java.awt.Font( "Tahoma", 1, 14 )
+				"text": "Security Answer:"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel1"
+				"font": new java.awt.Font( "Tahoma", 1, 20 )
+				"text": "Add New Login"
+				"toolTipText": ""
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Save"
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+				"font": new java.awt.Font( "Arial", 0, 18 )
+				"foreground": new java.awt.Color( 0, 153, 0, 255 )
+				"text": "Save"
+				"cursor": #Cursor0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "SaveActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "statusComboBox"
+				"font": new java.awt.Font( "Tahoma", 0, 13 )
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "Employee"
+					addElement( "Employee" )
+					addElement( "Admin" )
+				}
+				auxiliary() {
+					"JavaCodeGenerator.typeParameters": "String"
+				}
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

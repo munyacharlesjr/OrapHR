@@ -1,0 +1,137 @@
+JFDML JFormDesigner: "7.0.0.3.238" Java: "11.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :49:49:p, par l {seq l {comp jLabel8:::p:105:p, space :44:44:p, par l {comp generateSlipButton:::p:215:p, comp salaryMonth:::p:172:p}}, seq {comp jLabel4:::p::p, space :123:123:p, comp idTextField:::p:172:p}, seq {comp jLabel5:::p::p, space :111:111:p, comp salaryDays:::p:172:p}, seq {comp jLabel6:::p::p, space :85:85:p, comp advanceTextField:::p:172:p}, seq {comp jLabel7:::p::p, space :74:74:p, comp deductionTextField:::p:172:p}, comp jLabel1::l:p:144:p}, space ::220:x}}"
+			"$verticalGroup": "par l {seq {space :p:58:p, comp jLabel1:::p::p, space :p:50:p, par l {seq {space :3:3:p, comp jLabel4:::p::p}, comp idTextField:::p::p}, space :45:45:p, par l {seq {space :2:2:p, comp jLabel5:::p::p}, comp salaryDays:::p::p}, space :46:46:p, par l {seq {space :3:3:p, comp jLabel6:::p::p}, comp advanceTextField:::p::p}, space :56:56:p, par l {seq {space :3:3:p, comp jLabel7:::p::p}, comp deductionTextField:::p::p}, space :59:59:p, par l {seq {space :2:2:p, comp jLabel8:::p::p}, comp salaryMonth:::p::p}, space :p:37:p, comp generateSlipButton:::p:58:p, space ::31:x}}"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 255, 255, 255, 255 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel1"
+				"font": new java.awt.Font( "Tahoma", 1, 20 )
+				"foreground": new java.awt.Color( 0, 102, 204, 255 )
+				"text": "Salary Slips"
+				"toolTipText": ""
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel4"
+				"font": new java.awt.Font( "Tahoma", 1, 14 )
+				"text": "ID: "
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "idTextField"
+				"font": new java.awt.Font( "Tahoma", 0, 14 )
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel5"
+				"font": new java.awt.Font( "Tahoma", 1, 14 )
+				"text": "Days:"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel6"
+				"font": new java.awt.Font( "Tahoma", 1, 14 )
+				"text": "Advance:"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "advanceTextField"
+				"font": new java.awt.Font( "Tahoma", 0, 14 )
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel7"
+				"font": new java.awt.Font( "Tahoma", 1, 14 )
+				"text": "Deduction:"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "deductionTextField"
+				"font": new java.awt.Font( "Tahoma", 0, 14 )
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "generateSlipButton"
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+				"font": new java.awt.Font( "Tahoma", 1, 22 )
+				"foreground": new java.awt.Color( 0, 102, 0, 255 )
+				"text": "Generate Slip"
+				"cursor": &Cursor0 new java.awt.Cursor( 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "generateSlipButtonActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel8"
+				"font": new java.awt.Font( "Tahoma", 1, 14 )
+				"text": "Salary Month:"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "salaryMonth"
+				"font": new java.awt.Font( "Tahoma", 0, 13 )
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "Jan"
+					addElement( "Jan" )
+					addElement( "Feb" )
+					addElement( "Mar" )
+					addElement( "Aprl" )
+					addElement( "May" )
+					addElement( "Jun" )
+					addElement( "Jul" )
+					addElement( "Aug" )
+					addElement( "Sept" )
+					addElement( "Oct" )
+					addElement( "Nov" )
+					addElement( "Dec" )
+				}
+				"cursor": #Cursor0
+				auxiliary() {
+					"JavaCodeGenerator.typeParameters": "String"
+				}
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "salaryDays"
+				"font": new java.awt.Font( "Tahoma", 0, 13 )
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "1"
+					addElement( "1" )
+					addElement( "2" )
+					addElement( "3" )
+					addElement( "4" )
+					addElement( "5" )
+					addElement( "6" )
+					addElement( "7" )
+					addElement( "8" )
+					addElement( "9" )
+					addElement( "10" )
+					addElement( "11" )
+					addElement( "12" )
+					addElement( "13" )
+					addElement( "14" )
+					addElement( "15" )
+					addElement( "16" )
+					addElement( "17" )
+					addElement( "18" )
+					addElement( "19" )
+					addElement( "20" )
+					addElement( "21" )
+					addElement( "22" )
+					addElement( "23" )
+					addElement( "24" )
+					addElement( "25" )
+					addElement( "26" )
+					addElement( "27" )
+					addElement( "28" )
+					addElement( "29" )
+					addElement( "30" )
+					addElement( "31" )
+				}
+				"cursor": #Cursor0
+				auxiliary() {
+					"JavaCodeGenerator.typeParameters": "String"
+				}
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

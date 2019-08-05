@@ -1,0 +1,30 @@
+JFDML JFormDesigner: "7.0.0.3.238" Java: "11.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"undecorated": true
+			"$locationPolicy": 1
+			add( new FormComponent( "javax.swing.JProgressBar" ) {
+				name: "jProgressBar1"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 250
+				"y": 350
+				"width": 300
+				"height": 10
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel1"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/gamemarkstudio/splashScreen/SplashGMS.gif" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 800
+				"height": 400
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 798, 399 )
+		} )
+	}
+}
